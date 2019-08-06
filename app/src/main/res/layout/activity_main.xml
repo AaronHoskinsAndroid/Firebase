@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter User Email" />
+
+    <EditText
+        android:id="@+id/etUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please Enter User Password" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createAccountClicked"
+        android:text="Create Account" />
+
+    <Button
+        android:id="@+id/btnSignInAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="signInAccountClicked"
+        android:text="Sign In To Account" />
+
+    <Button
+        android:id="@+id/btnSignOutAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Out of Account"
+        android:onClick="SignOutOfAccountClicked"/>
+
+
+</LinearLayout>
